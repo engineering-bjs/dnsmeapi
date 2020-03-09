@@ -1,15 +1,24 @@
-# Dnsmeapi Python client
-simplify dnsmadeeasy api calls :- https://api-docs.dnsmadeeasy.com/?version=latest#6a7eef29-27fb-4f37-af89-e3ec4a3dcf66
-**Python 3.7**
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-# Tests  
-From the project root directory  
-```
-export PYTHONPATH=$(pwd)
-pytest .
-```
-# Dnsmeapi Class
-```
+__author__ = "BJS Engineering Team"
+__copyright__ = "Copyright 2020, BJS Home Delivery"
+__credits__ = ["Rana Ramnik singh", "Callam Delaney", "Jeevan Kumar"]
+__license__ = "GPL"
+__version__ = "1.0.1"
+__maintainer__ = "Anish Kumar Dhanka"
+__email__ = "anish@bjshomedelivery.com"
+
+"""Dnsmeapi 
+   simplify dnsmadeeasy api calls for https://api-docs.dnsmadeeasy.com/?version=latest#6a7eef29-27fb-4f37-af89-e3ec4a3dcf66
+"""
+
+import requests
+import hmac
+import hashlib
+from email.utils import formatdate
+
+
 class Dnsmeapi:
     hmac = None
     request_date = None
@@ -43,16 +52,3 @@ class Dnsmeapi:
             return response.text.encode('utf-8')
         except Exception as e:
             raise e
-```
-# Import 
-from dnsmeapi import Dnsmeapi
-
-# Initalise class
-dnsmeapi = Dnsmeapi(
-    "api_key", "api_secret_key"
-)
-
-# Send Request
-dnsmeapi.make_request(
-        "GET", "URL", {}
-    )
