@@ -11,7 +11,7 @@ setuptools.setup(
     description="make simple dnsmadeeasy api calls",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/engineering-bjs/dnsmeapi",
     packages=setuptools.find_packages(),
     install_requires=["requests>=2.23.0"],
     classifiers=[
