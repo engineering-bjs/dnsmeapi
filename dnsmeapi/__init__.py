@@ -4,8 +4,8 @@
 __author__ = "BJS Engineering Team"
 __copyright__ = "Copyright 2020, BJS Home Delivery"
 __credits__ = ["Rana Ramnik singh", "Callam Delaney", "Jeevan Kumar"]
-__license__ = "GPL"
-__version__ = "1.0.1"
+__license__ = "MIT"
+__version__ = "0.0.1"
 __maintainer__ = "Anish Kumar Dhanka"
 __email__ = "anish@bjshomedelivery.com"
 
