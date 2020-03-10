@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="dnsmeapi",
-    version="0.0.1",
+    version="0.0.2",
     author="BJS Engineering Team",
     author_email="anish@bjshomedelivery.com",
     license='MIT',
@@ -15,7 +15,7 @@ setuptools.setup(
     url="https://github.com/engineering-bjs/dnsmeapi",
     packages=setuptools.find_packages(),
     install_requires=["requests>=2.23.0"],
-    download_url= "https://github.com/engineering-bjs/dnsmeapi/archive/dnsmeapi-0.0.1.tar.gz",
+    download_url= "https://github.com/engineering-bjs/dnsmeapi/blob/master/archive/dnsmeapi-0.0.2.tar.gz",
     keywords = ["dnsmadeeasy","sha1","python3","requests","hmac"],
     classifiers=[
         "Programming Language :: Python :: 3",
